@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购买会员</title>
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/header.png" alt="">
+    </header>
+    <div class="content">
+    	<div class="title clearfix">
+    		<div class="left active h1">
+    			<h2>产品介绍</h2>
+    		</div>
+    		<div class="left h2">
+    			<h2>购买须知</h2>
+    		</div>
+    		<div class="right h3">
+    			<h2>常见问题</h2>
+    		</div>
+    	</div>
+        <div class="background">
+            <div class="move">
+                <img src="img/content.png" alt="">
+                <img src="img/content.png" alt="">
+                <img src="img/content.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    <div class="fixed">
+        <div class="buy">
+            <div class="buy-title">
+                <div class="left">
+                    <img class="img-img" src="img/manager_click.png" alt="">
+                </div>
+                <div class="left">
+                    <img class="img-img" src="img/bank.png" alt="">
+                </div>
+                <div class="right">
+                    <img class="img-img" src="img/finance.png" alt="">
+                </div>
+            </div>
+        </div>
+        <footer class="footer clearfix">
+            <div class="left height">
+                <p>价格: <span><strong class="price">128.00元</strong></span></p>
+            </div>
+            <div class="left padding">
+                <div class="agree clearfix">
+                    <img class="left jump" src="http://weixin.qhgcbanking.com/attachment/images/2/2018/06/n134Q4CQ1qRs222200L09QXcF1q1x8.png" alt="">
+                    <div class="left side">
+                        <p class="hasagree">我已阅读并同意</p>
+                        <a href="http://weixin.qhgcbanking.com/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=diypage&id=71" class="hui" style="color: #45a6e6;margin-top: 0.25rem;display: block;">《惠融财商协议》</a>
+                    </div>
+                </div>
+
+            </div>
+            <a class="right box turn" style="display: block;" href="http://weixin.qhgcbanking.com/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=goods.detail&id=206">
+                立即购买
+            </a>
+        </footer>
+    </div>
+</body>
+<script type="text/javascript">
+    (function () {
+        var html = document.documentElement;
+        var width = html.getBoundingClientRect().width;
+        html.style.fontSize = width / 18 + 'px';
+
+        var price = document.querySelector('.price');
+        var turn = document.querySelector('.turn');
+        var jump = document.querySelector('.jump');
+        var hasagree = document.querySelector('.hasagree');
+        var flag = true;
+        var flag1 = true;
+        var flag2 = true;
+        var img = document.querySelectorAll('.img-img')
+        console.log(img);
+
+/*        img[0].addEventListener('touchend', function () {
+            price.innerHTML = '128.00元';
+            turn.setAttribute('href', 'http://weixin.qhgcbanking.com/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=goods.detail&id=206')
+            img[1].setAttribute('src', 'img/bank.png');
+            img[2].setAttribute('src', 'img/finance.png');
+            flag = true;
+            flag1 = true;
+        });
+        img[1].addEventListener('touchend', function () {
+            if (flag) {
+                price.innerHTML = '328.00元';
+                turn.setAttribute('href', 'http://weixin.qhgcbanking.com/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=goods.detail&id=207')
+                img[1].setAttribute('src', 'img/bank_click.png');
+                img[2].setAttribute('src', 'img/finance.png');
+                flag = false;
+                flag1 = true;
+            } else {
+                price.innerHTML = '128.00元';
+                turn.setAttribute('href', 'http://weixin.qhgcbanking.com/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=goods.detail&id=207')
+                img[1].setAttribute('src', 'img/bank.png');
+                img[2].setAttribute('src', 'img/finance.png');
+                flag = true;
+            }
+
+        });
+        img[2].addEventListener('touchend', function () {
+            if (flag1) {
+                price.innerHTML = '598.00元';
+                turn.setAttribute('href', 'http://weixin.qhgcbanking.com/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=goods.detail&id=208')
+                img[1].setAttribute('src', 'img/bank_click.png');
+                img[2].setAttribute('src', 'img/finance_click.png');
+                flag1 = false;
+                flag = true;
+            } else {
+                price.innerHTML = '328.00元';
+                img[2].setAttribute('src', 'img/finance.png');
+                flag1 = true;
+                flag = false;
+            }
+        });*/
+        img[0].addEventListener('touchend', function () {
+            price.innerHTML = '128.00元';
+            turn.setAttribute('href', 'http://weixin.qhgcbanking.com/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=goods.detail&id=206')
+            this.setAttribute('src', 'img/manager_click.png');
+            img[1].setAttribute('src', 'img/bank.png');
+            img[2].setAttribute('src', 'img/finance.png');
+        });
+        img[1].addEventListener('touchend', function () {
+                price.innerHTML = '328.00元';
+                turn.setAttribute('href', 'http://weixin.qhgcbanking.com/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=goods.detail&id=207')
+                this.setAttribute('src', 'img/bank_click.png');
+                img[0].setAttribute('src', 'img/manager.png');
+                img[2].setAttribute('src', 'img/finance.png');
+        });
+        img[2].addEventListener('touchend', function () {
+                price.innerHTML = '598.00元';
+                turn.setAttribute('href', 'http://weixin.qhgcbanking.com/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=goods.detail&id=208')
+                this.setAttribute('src', 'img/finance_click.png');
+                img[0].setAttribute('src', 'img/manager.png');
+                img[1].setAttribute('src', 'img/bank.png');
+        });
+        jump.addEventListener('touchend',display)
+        hasagree.addEventListener('touchend',display)
+
+        var move=$('.move');
+        $('.h1').get(0).addEventListener('touchend',function () {
+            $('.h1').addClass('active');
+            $('.h2,.h3').removeClass('active');
+            move.stop().animate({
+                'left':'-0rem'
+            })
+        },1000)
+        $('.h2').get(0).addEventListener('touchend',function () {
+            $('.h2').addClass('active');
+            $('.h1,.h3').removeClass('active');
+            move.stop().animate({
+                'left':'-18rem'
+            })
+        },1000)
+        $('.h3').get(0).addEventListener('touchend',function () {
+            $('.h3').addClass('active');
+            $('.h1,.h2').removeClass('active');
+            move.stop().animate({
+                'left':'-36rem'
+            })
+        },1000)
+        
+        function display(){
+            if (flag2) {
+                jump.setAttribute('src', 'http://weixin.qhgcbanking.com/attachment/images/2/2018/06/aSLhVDvmxDDzXV8qfRXyYLxX8Dflpz.png');
+                flag2=false
+            }else {
+                jump.setAttribute('src','http://weixin.qhgcbanking.com/attachment/images/2/2018/06/n134Q4CQ1qRs222200L09QXcF1q1x8.png')
+                flag2=true;
+            }
+        }
+    })()
+</script>
+</html>

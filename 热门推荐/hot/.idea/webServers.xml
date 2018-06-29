@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="25a6fd94-ac42-4afb-8eb9-3a1794a490bd" name="test" url="http://192.168.0.10:8088/hot">
+        <fileTransfer port="0" mountedRoot="F:\微信公众号\热门推荐\hot" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

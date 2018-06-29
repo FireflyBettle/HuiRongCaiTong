@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta charset="UTF-8">
+    <title>申请详情</title>
+    <link rel="stylesheet" type="text/css" href="./Public/Home/css/loan_base.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+    <link rel="stylesheet" href="./Public/Home/css/goodsDetails.css?v=1">
+    <link rel="stylesheet" href="./Public/Home/css/style.css">
+    <script type="text/javascript" src="./Public/Home/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./Public/Home/js/windowOpen.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="titlenav">
+        <div class="weui-flex" style="margin-top: 10px;">
+            <div class="weui-flex__item">
+                <p class="money">额度3000-50000</p>
+                <p class="text">公积金连续缴纳三个月以上</p>
+            </div>
+        </div>
+    </div>
+    <style>
+
+    </style>
+    <div class="goods_info">
+        <div class="bg">
+            <div class="img">
+                <img src="./Public/Uploads/fengtai.png" alt="" class="goodsImg" style="width:60px;height:60px">
+                <p class="goods_name">蜂泰科技（智e贷）</p>
+            </div>
+            <div class="ts">
+                <div class="box">
+                    <p class="bold">申请条件</p>
+                    <p>1、身份限制：中国公民（不含港澳台籍人士），非公安、检察院、法院、武警、军队和城管机构工作人员</p>
+                    <p>2、年龄限制：本产品设置用户年龄在 22 – 50 周岁准入</p>
+                    <p>3、公积金数据限制: 公积金连续缴纳 3 个月以上；月缴存额不低于 480 元， 或月缴纳基数不低于 2000 元;若 提供的公积金数据不符合以上要求，则需要提供至少一张贷记卡使用信息，信用卡最小额度大于等于 3000 元，且使用记录满 6 个月，该卡当前使用状态为正常</p>
+                </div>
+                <div class="box">
+                    <p class="bold">所需资料</p>
+                    <p>1、基本信息：身份证、学历、婚姻状况、居住地址、联系电话、银行卡号、借款用途</p>
+                    <p>2、工作信息：公司名称、公司地址、公司电话</p>
+                    <p>3、联系人信息（两位）：姓名、关系、手机号码</p>
+                    <p>4、运营商数据：手机运营商服务密码</p>
+                    <p>5、芝麻信用数据：芝麻信用验证码</p>
+                </div>
+                <div class="box">
+                    <p class="bold">产品额度</p>
+                    <p>3000元—50000元</p>
+                </div>
+                <div class="box">
+                    <p class="bold">地区限制</p>
+                    <p>目前禁入区域为黑龙江、辽宁、吉林、内蒙古、甘肃（除兰州）、青海、西藏、新疆、云南、广西</p>
+                </div>
+                <div class="fixed_box">
+                    <form action="infos.php" method="post">
+                        <div class="weui-cell form-group">
+                            <div class="weui-cell__hd">
+                                <label class="weui-label">姓名</label>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <input class="weui-input" name="names" id="name" type="text" placeholder="请输入姓名" required>
+                            </div>
+                        </div>
+                        <div class="weui-cell form-group">
+                            <div class="weui-cell__hd">
+                                <label class="weui-label">手机号</label>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <input class="weui-input" id="phone" name="phone" type="number" pattern="[0-9]*"
+                                       placeholder="请输入手机号" required>
+                            </div>
+                        </div>
+                        <div class="weui-cell form-group">
+                            <!--<p style="font-size:12px;color:#e64340">已有13993716人申请</p>-->
+                        </div>
+                        <div class="weui-flex btn-box">
+                            <div class="weui-flex__item">
+                                <input type="hidden" value="828983" id="from_user_id"/>
+                                <!--  <a href="javascript:;" class="weui-btn weui-btn_primary" id="lijibanli">立即申请</a> -->
+                                <input type="submit" class="weui-btn weui-btn_primary" id="lijibanli" value="立即申请">
+                            </div>
+                        </div>
+                        <input type="hidden" name="recommender_id" value="" id="rid">
+                        <input type="hidden" name="products" value="蜂泰">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            var url = document.URL;
+            var mid = url.split("=");
+            $("#rid").val(mid[1]);
+        })
+    </script>
+    <script src="Public/Home/js/index.js"></script>
+</body>
+</html>

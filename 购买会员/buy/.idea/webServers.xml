@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7ddfd704-116e-4f69-af6d-d21a48903482" name="test" url="http://192.168.0.10:8088/buy">
+        <fileTransfer port="0" mountedRoot="F:\微信公众号\购买会员\buy" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

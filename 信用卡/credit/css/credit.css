@@ -1,0 +1,116 @@
+/*默认样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: helvetica;
+    background: #f5f4f9;
+}
+body * {
+    -webkit-test-size-adjust:100%;
+    -webkit-user-select: none;
+}
+a,button,input {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+button,input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+a {
+    text-decoration: none;
+    color: #2b2a2a;
+}
+input {
+    outline: none;
+    vertical-align: middle;
+}
+ul {
+    list-style: none;
+}
+img {
+    vertical-align: middle;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*自定义*/
+header img {
+    width: 100%;
+}
+.wrapper {
+   padding: 0.5rem;
+}
+.content {
+	background: #fff;
+	height: 7.283333rem;
+    box-sizing: border-box;
+    padding: 0.516666rem 0.616666rem 1.016666rem 0.616666rem;
+    box-shadow: 1px 1px 1px #e4e4e4;
+}
+.content h2 {
+    font-size: 0.7rem;
+}
+.content p {
+	font-size: 0.6rem;
+}
+.content .left h2,.content .left p {
+    height: 1.2rem;
+    line-height: 1.2rem;
+}
+.content .left h3 {
+    font-size: 0.6rem;
+    font-weight: normal;
+    margin-top: 0.133333rem;
+}
+.content .left p {
+	color: #949494;
+	position: relative;
+    text-indent:0.7rem;
+    margin-top: 0.166666rem;
+    height: 1.08rem;
+    line-height: 1.08rem;
+}
+.content .left p::before {
+	content:'';
+	position: absolute;
+	width: 0.283333rem;
+	height: 0.283333rem;
+    border-radius: 50%;
+    background: #b5b5b5;
+    left: 0;
+    top: 0.383rem;
+}
+.content .side {
+	width: 5.466666rem;
+	height: 5.75rem;
+    text-align: center;
+    position: relative;
+}
+.content .side img {
+	width: 4.466666rem;
+	margin: 0.583333rem 0 0.7666px 0;
+}
+.content .side button {
+	height: 1.6rem;
+	line-height: 1.6rem;
+	width: 5.466666rem;
+	background: #1a9af3;
+	color: #fff;
+	border: none;
+	outline: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius:0.15rem;
+}

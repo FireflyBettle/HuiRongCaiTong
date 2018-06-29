@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta charset="UTF-8">
+    <title>申请详情</title>
+    <link rel="stylesheet" type="text/css" href="./Public/Home/css/loan_base.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+    <link rel="stylesheet" href="./Public/Home/css/goodsDetails.css?v=1">
+    <link rel="stylesheet" href="./Public/Home/css/style.css">
+    <script type="text/javascript" src="./Public/Home/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./Public/Home/js/windowOpen.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="titlenav">
+        <div class="weui-flex" style="margin-top: 10px;">
+            <div class="weui-flex__item">
+                <p class="money">额度3000-200000</p>
+                <p class="text">信用卡</p>
+            </div>
+        </div>
+    </div>
+    <style>
+
+    </style>
+    <div class="goods_info">
+        <div class="bg">
+            <div class="img">
+                <img src="./Public/Uploads/fengtai.png" alt="" class="goodsImg" style="width:60px;height:60px">
+                <p class="goods_name">蜂泰科技（卡易贷）</p>
+            </div>
+            <div class="ts">
+                <div class="box">
+                    <p class="bold">产品名称 ：</p>
+                    <p>卡易贷.公积金贷</p>
+                </div>
+                <div class="box">
+                    <p class="bold">产品类型</p>
+                    <p>无担保无抵押纯信用贷款</p>
+                </div>
+                <div class="box">
+                    <p class="bold">额度范围</p>
+                    <p>3000-200000</p>
+                </div>
+                <div class="box">
+                    <p class="bold">件均</p>
+                    <p>30000-50000</p>
+                </div>
+                <div class="box">
+                    <p class="bold">贷款期限</p>
+                    <p>6-12期</p>
+                </div>
+                <div class="box">
+                    <p class="bold">利率</p>
+                    <p>0.63%-1.69%</p>
+                </div>
+                <div class="box">
+                    <p class="bold">申请条件（85字以内）</p>
+                    <p>国籍：持有第二代身份证的中国公民，不含港澳台籍人士</p>
+                    <p>年龄： 22周岁-50周岁；</p>
+                    <p>区域限制：黑龙江、辽宁、吉林、内蒙古、甘肃（除兰州）、青海、西藏、新疆、云南、广西、海南</p>
+                </div>
+                <div class="box">
+                    <p class="bold">所需材料</p>
+                    <p>身份证、银行卡</p>
+                </div>
+                <div class="box">
+                    <p class="bold">授权认证</p>
+                    <p>信用卡认证、绑卡认证，运营商认证，公积金认证，芝麻信用授权</p>
+                </div>
+                <div class="box">
+                    <p class="bold">还款方式</p>
+                    <p>等本等息</p>
+                </div>
+
+                <div class="fixed_box">
+                    <form action="infos.php" method="post">
+                        <div class="weui-cell form-group">
+                            <div class="weui-cell__hd">
+                                <label class="weui-label">姓名</label>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <input class="weui-input" name="names" id="name" type="text" placeholder="请输入姓名" required>
+                            </div>
+                        </div>
+                        <div class="weui-cell form-group">
+                            <div class="weui-cell__hd">
+                                <label class="weui-label">手机号</label>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <input class="weui-input" id="phone" name="phone" type="number" pattern="[0-9]*"
+                                       placeholder="请输入手机号" required>
+                            </div>
+                        </div>
+                        <div class="weui-cell form-group">
+                            <!--<p style="font-size:12px;color:#e64340">已有13993716人申请</p>-->
+                        </div>
+                        <div class="weui-flex btn-box">
+                            <div class="weui-flex__item">
+                                <input type="hidden" value="828983" id="from_user_id"/>
+                                <!--  <a href="javascript:;" class="weui-btn weui-btn_primary" id="lijibanli">立即申请</a> -->
+                                <input type="submit" class="weui-btn weui-btn_primary" id="lijibanli" value="立即申请">
+                            </div>
+                        </div>
+                        <input type="hidden" name="recommender_id" value="" id="rid">
+                        <input type="hidden" name="products" value="蜂泰">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            var url = document.URL;
+            var mid = url.split("=");
+            $("#rid").val(mid[1]);
+        })
+    </script>
+    <script src="Public/Home/js/index.js"></script>
+</body>
+</html>

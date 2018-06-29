@@ -1,0 +1,46 @@
+.ts {
+    padding: 20px 0;
+    border-top: 1px solid #d9d9d9;
+}
+.ts p {
+    font-size: 14px;
+}
+.goods_info .goods_name {
+    line-height: 90px;
+}
+
+.goods_info .img {
+    margin-bottom: 15px;
+}
+.bold {
+    font-weight: bold;
+    font-size: 15px!important;
+    color: #000;
+}
+p:not(.bold){
+    margin-left: 30px;
+    text-align: justify;
+}
+p.money,p.text,p.goods_name {
+    margin-left: 0;
+    text-align: center;
+}
+.box {
+    /*border-bottom: 1px solid #efefef;*/
+    padding-bottom: 15px;
+}
+.ts p:after {
+    height: 0;
+}
+p {
+    line-height: 1.6;
+}
+.content {
+    padding-bottom: 125px;
+}
+.weui-btn_primary {
+    background-color: rgba(0,145,230,0.8);
+}
+.goods_info .goodsImg {
+    border-radius: 0;
+}

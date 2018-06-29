@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: helvetica;
+    background: #eaeaeb;
+}
+body * {
+    -webkit-test-size-adjust:100%;
+    -webkit-user-select: none;
+}
+a,button,input {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+button,input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+a {
+    text-decoration: none;
+    color: #2b2a2a;
+}
+input {
+    outline: none;
+    vertical-align: middle;
+}
+ul {
+    list-style: none;
+}
+img {
+    vertical-align: middle;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.img img {
+    width: 100%;
+}
+.title {
+    background: #f5f4f7;
+    height: 2.916666rem;
+    padding:0.266666rem 1rem 0.566666rem 1rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+}
+.title .left{
+	margin: 0.3rem 0 0 0;
+}
+.title h3 {
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+}
+.title h3 span {
+    color: #f5971d;
+}
+.title li {
+	font-size: 0.416666rem;
+    height: 0.65rem;
+    line-height: 0.65rem;
+}
+.title img {
+	width: 2.283333rem;
+}
+.content {
+    padding: 0.45rem 0.4rem;
+    background: #f5f4f7;
+}
+.content a {
+    display: block;
+}
+.content .box {
+	height: 7.4rem;
+	background: #fff;
+	padding: 0.666666rem;
+	box-sizing: border-box;
+	margin-bottom: 0.333333rem;
+    box-shadow: 1px 1px 1px #dedede;
+}
+.box .wraper {
+	height: 2.783333rem;
+	border-bottom: 1px solid #f1f1f1;
+}
+.box img {
+	width: 2.583333rem;
+	height: 2.583333rem;
+}
+.box h3 {
+	font-size: 0.7rem;
+}
+.box .center {
+    margin-left: 0.533333rem;
+}
+.box mark {
+	font-size: 0.416666rem;
+	background: #fff;
+	border: 1px solid #cec8c8;
+	border-radius:0.333333rem;
+	padding:0.05rem 0.15rem 0 0.15rem;
+	color: #9e9e9e;
+	font-size: 0.45rem;
+	position: relative;
+	bottom: 0.25rem;
+}
+.box .success {
+	font-size: 0.566666rem;
+	color: #b1b1b1;
+}
+.box .success span {
+	color: #649bf1;
+}
+.nav {
+    text-align: center;
+}
+.nav h4 {
+	font-size: 0.533333rem;
+	color: #797878;
+}
+.nav .month p,.nav .time p {
+    color: #797878;
+    font-weight: bold;
+}
+.hight,.month,.time {
+    width: 33%;
+    border-right: 1px solid #d2d2d2;
+    margin-top: 0.7rem;
+    height: 2.066666rem;
+}
+.time {
+    border-right:none;
+}
+.nav p {
+    color: #f0954f;
+    font-size: 0.666666rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}

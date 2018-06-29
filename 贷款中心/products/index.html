@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贷款中心</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="img">
+    <img src="img/bannar.png" alt="">
+</div>
+<div class="title">
+    <div class="left">
+        <h3>今天已有<span>987</span>人成功发起申请</h3>
+        <div class="scroll">
+            <ul class="ul">
+                <li><p>恭喜135****4861在360借条成功申请50000元</p></li>
+                <li><p>恭喜135****5791在拍拍贷成功申请30000元</p></li>
+                <li><p>恭喜135****4268在快贷成功申请10000元</p></li>
+                <li><p>恭喜135****7659在众安点点成功申请10000元</p></li>
+                <li><p>恭喜135****3795在360借条成功申请10000元</p></li>
+                <li><p>恭喜135****4556在51即刻有成功申请20000元</p></li>
+                <li><p>恭喜135****8530在小树时贷成功申请30000元</p></li>
+                <li><p>恭喜135****8519在360借条成功申请10000元</p></li>
+                <li><p>恭喜135****6594在龙分期成功申请4000元</p></li>
+                <li><p>恭喜135****9518在360借条成功申请10000元</p></li>
+            </ul>
+        </div>
+    </div>
+    <style>
+        .title .scroll {
+            position: relative;
+            height: 0.65rem;
+            overflow: hidden;
+            width: 13.333333rem;
+        }
+        .ul {
+            position: relative;
+            width: 13.333333rem;
+            top:0;
+            /*top: 0.65rem;*/
+        }
+    </style>
+    <script>
+        var ul=$('.ul');
+        var li=$('.ul').find('li');
+        var timer=null;
+        var count=1;
+        var sum=1;
+        console.log(ul.css('bottom'));
+        console.log(parseInt(li.css('height'))*4);
+        var temp='<li><p>恭喜135****4861在360借条成功申请50000元</p></li>\n' +
+            '<li><p>恭喜135****5791在拍拍贷成功申请30000元</p></li>\n' +
+            '<li><p>恭喜135****4268在快贷成功申请10000元</p></li>\n' +
+            '<li><p>恭喜135****7659在众安点点成功申请10000元</p></li>\n' +
+            '<li><p>恭喜135****3795在360借条成功申请10000元</p></li>\n' +
+            '<li><p>恭喜135****4556在51即刻有成功申请20000元</p></li>\n' +
+            '<li><p>恭喜135****8530在小树时贷成功申请30000元</p></li>\n' +
+            '<li><p>恭喜135****8519在360借条成功申请10000元</p></li>\n' +
+            '<li><p>恭喜135****6594在龙分期成功申请4000元</p></li>\n' +
+            '<li><p>恭喜135****9518在360借条成功申请10000元</p></li>';
+//ul.empty();
+        timer=setInterval(function () {
+            ul.animate({
+//              'bottom':-82+16*count+'px'
+//              'bottom':-2.6+0.65*count+'rem'
+                   'top':-0.65*count+'rem'
+            })
+            count++;
+            if (count>10*sum) {
+//          	ul.empty();
+//          	ul.css('top',0)
+            	ul.html(ul.html()+temp)
+                sum++;
+            }
+        },1500)
+    </script>
+    <div class="right">
+        <img src="img/buy.png" alt="">
+    </div>
+</div>
+<div class="content">
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/360.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/360.png" alt="">
+            <div class="left center">
+                <h3>360借条</h3>
+                <p>
+                    <mark>实名手机号</mark>
+                </p>
+            </div>
+            <p class="right success"><span>88960</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>200000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.5%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/ppd.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/ppd.jpg" alt="">
+            <div class="left center">
+                <h3>拍拍贷</h3>
+                <p>
+                    <mark>实名手机号</mark>
+                </p>
+            </div>
+            <p class="right success"><span>196582</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>200000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.68%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/gfd.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/gf.jpg" alt="">
+            <div class="left center">
+                <h3>功夫贷</h3>
+                <p>
+                    <mark>信用卡账单</mark>
+                    <mark>公积金</mark>
+                    <mark>淘宝</mark>
+                </p>
+            </div>
+            <p class="right success"><span>66454</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>100000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.66%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/dsqb.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/dsqb.png" alt="">
+            <div class="left center">
+                <h3>电商贷</h3>
+                <p>
+                    <mark>网商贷记录</mark>
+                    <mark>实名手机号</mark>
+                </p>
+            </div>
+            <p class="right success"><span>56461</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>500000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.55%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/niwodai.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/nwd.png" alt="">
+            <div class="left center">
+                <h3>你我贷</h3>
+                <p>
+                    <mark>实名手机号</mark>
+                    <mark>信用卡</mark>
+                    <mark>公积金</mark>
+                </p>
+            </div>
+            <p class="right success"><span>164643</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>50000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.69%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/kd.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/kd.jpeg" alt="">
+            <div class="left center">
+                <h3>快贷</h3>
+                <p>
+                    <mark>实名手机号</mark>
+                    <mark>信用卡</mark>
+                    <mark>公积金</mark>
+                </p>
+            </div>
+            <p class="right success"><span>154646</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>100000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.69%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/sjd.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/shouji.png" alt="">
+            <div class="left center">
+                <h3>手机贷</h3>
+                <p>
+                    <mark>实名手机号</mark>
+                    <mark>信用卡</mark>
+                    <mark>公积金</mark>
+                </p>
+            </div>
+            <p class="right success"><span>115646</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>50000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.6%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/youkuan.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/youkuan.jpg" alt="">
+            <div class="left center">
+                <h3>优款</h3>
+                <p>
+                    <mark>信用卡</mark>
+                    <mark>芝麻分</mark>
+                </p>
+            </div>
+            <p class="right success"><span>59161</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>50000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.65%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/xfyd.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/xfyd.png" alt="">
+            <div class="left center">
+                <h3>信富优贷</h3>
+                <p>
+                    <mark>实名手机号</mark>
+                </p>
+            </div>
+            <p class="right success"><span>44316</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>30000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.58%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/zadd.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/zadd.jpg" alt="">
+            <div class="left center">
+                <h3>众安点点</h3>
+                <p>
+                    <mark>芝麻分</mark>
+                    <mark>实名手机号</mark>
+                </p>
+            </div>
+            <p class="right success"><span>54316</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>50000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.68%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/fengtai.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/fengtai.png" alt="">
+            <div class="left center">
+                <h3>蜂泰科技-智e贷</h3>
+                <p>
+                    <mark>公积金3个月以上</mark>
+                </p>
+            </div>
+            <p class="right success"><span>54641</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>50000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.6%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/fengtai1.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/fengtai.png" alt="">
+            <div class="left center">
+                <h3>蜂泰科技-卡易贷</h3>
+                <p>
+                    <mark>信用卡</mark>
+                </p>
+            </div>
+            <p class="right success"><span>56476</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>200000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.63%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/51jky.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/jikeyou.jpg" alt="">
+            <div class="left center">
+                <h3>51即刻有</h3>
+                <p>
+                    <mark>实名手机号</mark>
+                    <mark>信用卡</mark>
+                    <mark>社保</mark>
+                    <mark>公积金</mark>
+                </p>
+            </div>
+            <p class="right success"><span>46782</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>100000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.6%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/51rpd.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/51renpin.png" alt="">
+            <div class="left center">
+                <h3>51人品贷</h3>
+                <p>
+                    <mark>信用卡账单</mark>
+                </p>
+            </div>
+            <p class="right success"><span>51349</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>100000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.66%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/xykd.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/xykd.png" alt="">
+            <div class="left center">
+                <h3>小赢卡贷</h3>
+                <p>
+                    <mark>信用卡</mark>
+                    <mark>公积金</mark>
+                </p>
+            </div>
+            <p class="right success"><span>64313</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>60000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.59%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/xfqd.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/xfqd.png" alt="">
+            <div class="left center">
+                <h3>信富期贷</h3>
+                <p>
+                    <mark>实名手机号</mark>
+                </p>
+            </div>
+            <p class="right success"><span>56413</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>15000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.68%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/xssd.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/xiaoshidai.png" alt="">
+            <div class="left center">
+                <h3>小树时贷</h3>
+                <p>
+                    <mark>实名手机号</mark>
+                    <mark>芝麻分</mark>
+                </p>
+            </div>
+            <p class="right success"><span>38164</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>10000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.75%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/aym.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/wam.jpg" alt="">
+            <div class="left center">
+                <h3>爱又米</h3>
+                <p>
+                    <mark>实名手机号</mark>
+                    <mark>学信网</mark>
+                </p>
+            </div>
+            <p class="right success"><span>39876</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>50000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.58%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/xyxq.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/xyxq.jpg" alt="">
+            <div class="left center">
+                <h3>信用星球</h3>
+                <p>
+                    <mark>实名手机号</mark>
+                    <mark>芝麻分</mark>
+                </p>
+            </div>
+            <p class="right success"><span>51346</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>100000</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.75%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/longfen.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/long.png" alt="">
+            <div class="left center">
+                <h3>龙分期</h3>
+                <p>
+                    <mark>实名手机号</mark>
+                </p>
+            </div>
+            <p class="right success"><span>34673</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>4000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.73%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/lyd.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/lyi.png" alt="">
+            <div class="left center">
+                <h3>乐一贷</h3>
+                <p>
+                    <mark>实名手机号</mark>
+                    <mark>芝麻分</mark>
+                </p>
+            </div>
+            <p class="right success"><span>57951</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>50000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.63%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
+</div>
+
+
+
+
+<script type="text/javascript">
+    (function () {
+        var html = document.documentElement;
+        var width = html.getBoundingClientRect().width;
+        html.style.fontSize = width / 18 + 'px';
+    })()
+</script>
+</body>
+</html>

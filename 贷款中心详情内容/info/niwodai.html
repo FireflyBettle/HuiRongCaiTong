@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta charset="UTF-8">
+    <title>申请详情</title>
+    <link rel="stylesheet" type="text/css" href="./Public/Home/css/loan_base.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+    <link rel="stylesheet" href="./Public/Home/css/goodsDetails.css?v=1">
+    <link rel="stylesheet" href="./Public/Home/css/style.css">
+    <script type="text/javascript" src="./Public/Home/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./Public/Home/js/windowOpen.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="titlenav">
+        <div class="weui-flex" style="margin-top: 10px;">
+            <div class="weui-flex__item">
+                <p class="money">额度1000-50000</p>
+                <p class="text">信用卡/芝麻分600以上</p>
+            </div>
+        </div>
+    </div>
+    <style>
+
+    </style>
+    <div class="goods_info">
+        <div class="bg">
+            <div class="img">
+                <img src="./Public/Uploads/nwd.png" alt="" class="goodsImg" style="width:60px;height:60px">
+                <p class="goods_name">你我贷</p>
+            </div>
+            <div class="ts">
+                <div class="box">
+                    <p class="bold">是否查征信</p>
+                    <p>否，不查不上征信</p>
+                </div>
+                <div class="box">
+                    <p class="bold">申请条件</p>
+                    <p>20-45周岁，芝麻分信用良好，有实名制手机号</p>
+                </div>
+                <div class="box">
+                    <p class="bold">所需资料</p>
+                    <p>身份认证、运营商、芝麻信用（可选的有：嘉卡贷要信用卡，嘉英贷要公积金）</p>
+                </div>
+                <div class="box">
+                    <p class="bold">可申请额度</p>
+                    <p>嘉卡贷最高30000，秒啦最高30000，嘉英贷最高50000，i复贷最高40000</p>
+                </div>
+                <div class="box">
+                    <p class="bold">月利率</p>
+                    <p>0.75%-1.88%</p>
+                </div>
+                <div class="box">
+                    <p class="bold">使用周期</p>
+                    <p>3-12个月</p>
+                </div>
+                <div class="fixed_box">
+                    <form action="infos.php" method="post">
+                        <div class="weui-cell form-group">
+                            <div class="weui-cell__hd">
+                                <label class="weui-label">姓名</label>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <input class="weui-input" name="names" id="name" type="text" placeholder="请输入姓名" required>
+                            </div>
+                        </div>
+                        <div class="weui-cell form-group">
+                            <div class="weui-cell__hd">
+                                <label class="weui-label">手机号</label>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <input class="weui-input" id="phone" name="phone" type="number" pattern="[0-9]*"
+                                       placeholder="请输入手机号" required>
+                            </div>
+                        </div>
+                        <div class="weui-cell form-group">
+                            <!--<p style="font-size:12px;color:#e64340">已有13993716人申请</p>-->
+                        </div>
+                        <div class="weui-flex btn-box">
+                            <div class="weui-flex__item">
+                                <input type="hidden" value="828983" id="from_user_id"/>
+                                <!--  <a href="javascript:;" class="weui-btn weui-btn_primary" id="lijibanli">立即申请</a> -->
+                                <input type="submit" class="weui-btn weui-btn_primary" id="lijibanli" value="立即申请">
+                            </div>
+                        </div>
+                        <input type="hidden" name="recommender_id" value="" id="rid">
+                        <input type="hidden" name="products" value="你我贷">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            var url = document.URL;
+            var mid = url.split("=");
+            $("#rid").val(mid[1]);
+        })
+    </script>
+    <script src="Public/Home/js/index.js"></script>
+</body>
+</html>
