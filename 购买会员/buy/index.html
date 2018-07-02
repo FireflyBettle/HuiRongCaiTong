@@ -66,6 +66,7 @@
         </footer>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
     (function () {
         var html = document.documentElement;
@@ -79,8 +80,7 @@
         var flag = true;
         var flag1 = true;
         var flag2 = true;
-        var img = document.querySelectorAll('.img-img')
-        console.log(img);
+        var img = document.querySelectorAll('.img-img');
 
 /*        img[0].addEventListener('touchend', function () {
             price.innerHTML = '128.00元';
@@ -143,6 +143,12 @@
                 img[0].setAttribute('src', 'img/manager.png');
                 img[1].setAttribute('src', 'img/bank.png');
         });
+
+        console.log($('.img-img'));
+        var imgs=$('.img-img');
+        imgs[0].click(function () {
+            alert(2)
+        })
         jump.addEventListener('touchend',display)
         hasagree.addEventListener('touchend',display)
 

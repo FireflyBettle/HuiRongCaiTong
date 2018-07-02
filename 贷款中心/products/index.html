@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>贷款中心</title>
+    <title>一键贷款</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -14,28 +14,36 @@
 </div>
 <div class="title">
     <div class="left">
-        <h3>今天已有<span>987</span>人成功发起申请</h3>
+        <h3>今天已有<span class="result">987</span>人成功发起申请</h3>
         <div class="scroll">
             <ul class="ul">
                 <li><p>恭喜135****4861在360借条成功申请50000元</p></li>
-                <li><p>恭喜135****5791在拍拍贷成功申请30000元</p></li>
-                <li><p>恭喜135****4268在快贷成功申请10000元</p></li>
-                <li><p>恭喜135****7659在众安点点成功申请10000元</p></li>
-                <li><p>恭喜135****3795在360借条成功申请10000元</p></li>
+                <li><p>恭喜138****5791在拍拍贷成功申请30000元</p></li>
+                <li><p>恭喜137****4268在快贷成功申请10000元</p></li>
+                <li><p>恭喜185****7659在众安点点成功申请10000元</p></li>
+                <li><p>恭喜181****3795在360借条成功申请10000元</p></li>
                 <li><p>恭喜135****4556在51即刻有成功申请20000元</p></li>
-                <li><p>恭喜135****8530在小树时贷成功申请30000元</p></li>
-                <li><p>恭喜135****8519在360借条成功申请10000元</p></li>
+                <li><p>恭喜130****8530在小树时代成功申请30000元</p></li>
+                <li><p>恭喜185****8519在360借条成功申请10000元</p></li>
                 <li><p>恭喜135****6594在龙分期成功申请4000元</p></li>
-                <li><p>恭喜135****9518在360借条成功申请10000元</p></li>
+                <li><p>恭喜132****9518在360借条成功申请10000元</p></li>
             </ul>
         </div>
     </div>
     <style>
         .title .scroll {
             position: relative;
-            height: 0.65rem;
+            height: 0.75rem;
             overflow: hidden;
             width: 13.333333rem;
+        }
+        .title li {
+			font-size: 0.416666rem;
+		    height: 0.75rem;
+		    line-height: 0.75rem;
+		}
+        .title .scroll p {
+        	font-size: 0.583333rem;
         }
         .ul {
             position: relative;
@@ -44,7 +52,7 @@
             /*top: 0.65rem;*/
         }
     </style>
-    <script>
+		<script>
         var ul=$('.ul');
         var li=$('.ul').find('li');
         var timer=null;
@@ -58,7 +66,7 @@
             '<li><p>恭喜135****7659在众安点点成功申请10000元</p></li>\n' +
             '<li><p>恭喜135****3795在360借条成功申请10000元</p></li>\n' +
             '<li><p>恭喜135****4556在51即刻有成功申请20000元</p></li>\n' +
-            '<li><p>恭喜135****8530在小树时贷成功申请30000元</p></li>\n' +
+            '<li><p>恭喜135****8530在小树时代成功申请30000元</p></li>\n' +
             '<li><p>恭喜135****8519在360借条成功申请10000元</p></li>\n' +
             '<li><p>恭喜135****6594在龙分期成功申请4000元</p></li>\n' +
             '<li><p>恭喜135****9518在360借条成功申请10000元</p></li>';
@@ -67,7 +75,7 @@
             ul.animate({
 //              'bottom':-82+16*count+'px'
 //              'bottom':-2.6+0.65*count+'rem'
-                   'top':-0.65*count+'rem'
+                   'top':-0.75*count+'rem'
             })
             count++;
             if (count>10*sum) {
@@ -76,7 +84,7 @@
             	ul.html(ul.html()+temp)
                 sum++;
             }
-        },1500)
+        },3000)
     </script>
     <div class="right">
         <img src="img/buy.png" alt="">
@@ -92,7 +100,7 @@
                     <mark>实名手机号</mark>
                 </p>
             </div>
-            <p class="right success"><span>88960</span>人成功申请</p>
+            <p class="right success"><span class="jt">960</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -118,7 +126,7 @@
                     <mark>实名手机号</mark>
                 </p>
             </div>
-            <p class="right success"><span>196582</span>人成功申请</p>
+            <p class="right success"><span class="ppd">582</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -146,7 +154,7 @@
                     <mark>淘宝</mark>
                 </p>
             </div>
-            <p class="right success"><span>66454</span>人成功申请</p>
+            <p class="right success"><span class="gfd">454</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -173,7 +181,7 @@
                     <mark>实名手机号</mark>
                 </p>
             </div>
-            <p class="right success"><span>56461</span>人成功申请</p>
+            <p class="right success"><span class="dsd">461</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -201,7 +209,7 @@
                     <mark>公积金</mark>
                 </p>
             </div>
-            <p class="right success"><span>164643</span>人成功申请</p>
+            <p class="right success"><span class="nwd">643</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -229,7 +237,7 @@
                     <mark>公积金</mark>
                 </p>
             </div>
-            <p class="right success"><span>154646</span>人成功申请</p>
+            <p class="right success"><span class="kd">569</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -257,7 +265,7 @@
                     <mark>公积金</mark>
                 </p>
             </div>
-            <p class="right success"><span>115646</span>人成功申请</p>
+            <p class="right success"><span class="sjd">646</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -284,7 +292,7 @@
                     <mark>芝麻分</mark>
                 </p>
             </div>
-            <p class="right success"><span>59161</span>人成功申请</p>
+            <p class="right success"><span class="yd">591</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -310,7 +318,7 @@
                     <mark>实名手机号</mark>
                 </p>
             </div>
-            <p class="right success"><span>44316</span>人成功申请</p>
+            <p class="right success"><span class="xfyd">316</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -337,7 +345,7 @@
                     <mark>实名手机号</mark>
                 </p>
             </div>
-            <p class="right success"><span>54316</span>人成功申请</p>
+            <p class="right success"><span class="zadd">546</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -363,7 +371,7 @@
                     <mark>公积金3个月以上</mark>
                 </p>
             </div>
-            <p class="right success"><span>54641</span>人成功申请</p>
+            <p class="right success"><span class="ftz">641</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -389,7 +397,7 @@
                     <mark>信用卡</mark>
                 </p>
             </div>
-            <p class="right success"><span>56476</span>人成功申请</p>
+            <p class="right success"><span class="ftk">476</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -418,7 +426,7 @@
                     <mark>公积金</mark>
                 </p>
             </div>
-            <p class="right success"><span>46782</span>人成功申请</p>
+            <p class="right success"><span class="jky">462</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -444,7 +452,7 @@
                     <mark>信用卡账单</mark>
                 </p>
             </div>
-            <p class="right success"><span>51349</span>人成功申请</p>
+            <p class="right success"><span class="rpd">981</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -471,7 +479,7 @@
                     <mark>公积金</mark>
                 </p>
             </div>
-            <p class="right success"><span>64313</span>人成功申请</p>
+            <p class="right success"><span class="xykd">148</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -497,7 +505,7 @@
                     <mark>实名手机号</mark>
                 </p>
             </div>
-            <p class="right success"><span>56413</span>人成功申请</p>
+            <p class="right success"><span class="xfqd">536</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -518,13 +526,13 @@
         <div class="clearfix wraper">
             <img class="left" src="img/xiaoshidai.png" alt="">
             <div class="left center">
-                <h3>小树时贷</h3>
+                <h3>小树时代</h3>
                 <p>
                     <mark>实名手机号</mark>
                     <mark>芝麻分</mark>
                 </p>
             </div>
-            <p class="right success"><span>38164</span>人成功申请</p>
+            <p class="right success"><span class="xssd">295</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -551,7 +559,7 @@
                     <mark>学信网</mark>
                 </p>
             </div>
-            <p class="right success"><span>39876</span>人成功申请</p>
+            <p class="right success"><span class="aym">567</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -578,7 +586,7 @@
                     <mark>芝麻分</mark>
                 </p>
             </div>
-            <p class="right success"><span>51346</span>人成功申请</p>
+            <p class="right success"><span class="xyxq">498</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -604,7 +612,7 @@
                     <mark>实名手机号</mark>
                 </p>
             </div>
-            <p class="right success"><span>34673</span>人成功申请</p>
+            <p class="right success"><span class="lfq">798</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -631,7 +639,7 @@
                     <mark>芝麻分</mark>
                 </p>
             </div>
-            <p class="right success"><span>57951</span>人成功申请</p>
+            <p class="right success"><span class="lyd">698</span>人成功申请</p>
         </div>
         <div class="nav">
             <div class="left hight">
@@ -649,16 +657,54 @@
         </div>
     </a>
 </div>
-
-
-
-
 <script type="text/javascript">
     (function () {
         var html = document.documentElement;
         var width = html.getBoundingClientRect().width;
         html.style.fontSize = width / 18 + 'px';
+
+
+        var num=0;
+        setInterval(function () {
+            num=$('.result').html(0)
+            setInterval(timer)
+        },86400000)
+        // 86400000
+        var timer=setInterval(function () {
+            var num=parseInt($('.result').html()+num);
+            num++;
+            $('.result').html(num)
+        },60000)
     })()
+    add($('.jt'),50000);
+    add($('.ppd'),53000);
+    add($('.gfd'),59000);
+    add($('.dsd'),62000);
+    add($('.nwd'),65000);
+    add($('.kd'),68000);
+    add($('.sjd'),71000);
+    add($('.yd'),740000);
+    add($('.xfyd'),77000);
+    add($('.zadd'),80000);
+    add($('.ftz'),83000);
+    add($('.ftk'),86000);
+    add($('.jky'),89000);
+    add($('.rpd'),92000);
+    add($('.xykd'),67000);
+    add($('.xfqd'),81000);
+    add($('.xssd'),56000);
+    add($('.aym'),70000);
+    add($('.xyxq'),62000);
+    add($('.lfq'),52000);
+    add($('.lyd'),76000);
+    function add(object,time) {
+        var num=0;
+        setInterval(function () {
+            var num=parseInt(object.html()+num);
+            num++;
+            object.html(num)
+        },time)
+    }
 </script>
 </body>
 </html>

@@ -57,6 +57,7 @@ header img {
     box-sizing: border-box;
     padding: 0.516666rem 0.616666rem 1.016666rem 0.616666rem;
     box-shadow: 1px 1px 1px #e4e4e4;
+    margin-bottom: 0.5rem;
 }
 .content h2 {
     font-size: 0.7rem;

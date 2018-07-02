@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="189b7501-f6be-4b3b-8b43-7e0fe054a8f9" name="test" url="http://192.168.0.10:8088/products">
-        <fileTransfer port="0" mountedRoot="F:\微信公众号\贷款中心\products" accessType="MOUNT" />
+      <webServer id="bdd68bf6-51ca-4363-beff-3b64df2bbf93" name="test" url="http://192.168.0.10:8088/贷款中心">
+        <fileTransfer port="0" mountedRoot="F:\微信公众号\贷款中心" accessType="MOUNT" />
       </webServer>
     </option>
   </component>
