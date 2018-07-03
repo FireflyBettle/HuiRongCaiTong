@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: helvetica;
+}
+body * {
+    -webkit-test-size-adjust:100%;
+    -webkit-user-select: none;
+}
+a,button,input {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+button,input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+a {
+    text-decoration: none;
+    color: #2b2a2a;
+}
+input {
+    outline: none;
+    vertical-align: middle;
+}
+ul {
+    list-style: none;
+}
+img {
+    vertical-align: middle;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*自定义*/
+header img {
+    width: 100%;
+}
+.square{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 85%; /* padding百分比是相对父元素宽度计算的 */
+}
+.square-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: 100%; !* 铺满父元素容器，这时候宽高就始终相等了 *!*/
+}
+.square-inner>li{
+    width: calc(98% / 3);  /* calc里面的运算符两边要空格 */
+    height: calc(98% / 3);
+    margin-right: 1%;
+    margin-bottom: 1%;
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex>li{
+    flex-grow: 1; /* 子元素按1/n的比例进行拉伸 */
+    /*background-color: #4d839c;*/
+    text-align: center;
+    font-size: 45px;
+    line-height: 1.7;
+}
+.flex>li:nth-of-type(3n){ /* 选择个数是3的倍数的元素 */
+    margin-right: 0;
+}
+.flex>li:nth-of-type(n+7){  /* 选择倒数的三个元素，n可以取0 */
+    margin-bottom: 0;
+}
+.flex p {
+	font-size: 0.566666rem;
+    color: #3f3f3f;
+}
+.flex img {
+	width: 1.733333rem;
+}
+.title {
+	width: 100%;
+	text-align: center;
+    position: relative;
+}
+.title h3 {
+    font-size: 0.883333rem;
+    margin-top: 0.933333rem;
+    color: #3f3f3f;
+    margin-bottom: .283333rem;
+}
+.title .line {
+    position: absolute;
+    height: 1px;
+    background: #d8d8d8;
+    left: 0;
+    width: 1.666666rem;
+    top: 0.583333rem;
+}
+.title .one {
+	left: 5rem;
+}
+.title .two {
+	left: 11.3rem;
+}

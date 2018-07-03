@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d8439f30-ccf4-42dd-811c-6473592bee7a" name="credit" url="http://192.168.0.10:8088/微信公众号">
+        <fileTransfer port="0" mountedRoot="F:\微信公众号" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
