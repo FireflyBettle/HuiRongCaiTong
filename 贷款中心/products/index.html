@@ -14,7 +14,7 @@
 </div>
 <div class="title">
     <div class="left">
-        <h3>今天已有<span class="result">987</span>人成功发起申请</h3>
+        <h3>今天已有<span class="result">649</span>人成功发起申请</h3>
         <div class="scroll">
             <ul class="ul">
                 <li><p>恭喜135****4861在360借条成功申请50000元</p></li>
@@ -656,6 +656,33 @@
             </div>
         </div>
     </a>
+    <a class="box" href="http://weixin.qhgcbanking.com/code/info/jfwk.html">
+        <div class="clearfix wraper">
+            <img class="left" src="img/jfwk.png" alt="">
+            <div class="left center">
+                <h3>玖富万卡</h3>
+                <p>
+                    <mark>实名手机号</mark>
+                    <mark>芝麻分</mark>
+                </p>
+            </div>
+            <p class="right success"><span class="lyd">498</span>人成功申请</p>
+        </div>
+        <div class="nav">
+            <div class="left hight">
+                <h4>最高额度</h4>
+                <p>150000元</p>
+            </div>
+            <div class="left month">
+                <h4>参考月利率</h4>
+                <p>0.85%</p>
+            </div>
+            <div class="right time">
+                <h4>放款时间</h4>
+                <p>当天</p>
+            </div>
+        </div>
+    </a>
 </div>
 <script type="text/javascript">
     (function () {
@@ -675,6 +702,36 @@
             num++;
             $('.result').html(num)
         },60000)
+
+
+        /*    var a=localStorage.getItem('time');
+            $('.result').html(0)
+            $('.result').html(a)
+            console.log(a);
+        setInterval(function () {
+            num=$('.result').html(0)
+            setInterval(timer)
+        },100000)
+        var timer=setInterval(function () {
+            var num=parseInt($('.result').html()+num);
+            num++;
+            $('.result').html(num);
+            localStorage.setItem('time',$('.result').html());
+        },100)*/
+
+        /*var num=0;
+        var date=new Date();
+        console.log(date.getTime()/1000-1530604452);
+        setInterval(function () {
+            num=$('.result').html(0)
+            setInterval(timer)
+        },10000)
+        // 86400000
+        var timer=setInterval(function () {
+            var num=parseInt($('.result').html()+num);
+            num++;
+            $('.result').html(num)
+        },100)*/
     })()
     add($('.jt'),50000);
     add($('.ppd'),53000);

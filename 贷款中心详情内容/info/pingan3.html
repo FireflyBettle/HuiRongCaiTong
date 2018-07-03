@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>平安银行</title>
+    <link rel="stylesheet" type="text/css" href="./Public/Home/css/traffic.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <h3>卡片详情</h3>
+</header>
+<div class="wrapper">
+    <img src="./Public/Uploads/pingan.png" alt="">
+    <h3>平安汽车之家联名金卡银联单币卡</h3>
+    <p>200元/年，首年免年费，消费3万元免次年年费</p>
+</div>
+<div class="content">
+    <div class="top">
+        <h3>权益</h3>
+        <p class="thin">白金卡(银联）</p>
+        <p class="free">免境外取现手续费</p>
+        <p class="free">免费3次龙腾境外机场贵宾室</p>
+    </div>
+    <div class="middle" style="margin-top: 0.5rem">
+        <h3>基础信息</h3>
+        <p class="thin">白金卡(银联）</p>
+        <p>年费:首年免年费，交易免次年</p>
+        <p class="thin">500元/年，刷满6笔免次年</p>
+        <p>积分:1元=1积分<span>免息期：56天</span></p>
+    </div>
+</div>
+<div class="button">
+    <form action="infos.php" method="post">
+        <div class="weui-cell__hd">
+            <label for="name" class="first">姓名</label>
+            <input type="text" id="name" name="names" placeholder="请输入姓名">
+        </div>
+        <div class="weui-cell__hd">
+            <label for="name" class="first">手机号</label>
+            <input type="number" id="phone" name="phone" placeholder="请输入手机号">
+        </div>
+        <!--<a href="javascript:;"><button>立即申请</button></a>-->
+        <input type="submit" class="weui-btn weui-btn_primary" id="lijibanli" value="立即申请">
+        <input type="hidden" name="recommender_id" value="" id="rid">
+        <input type="hidden" name="products" value="平安信用卡">
+    </form>
+</div>
+</body>
+<script src="Public/Home/js/index.js"></script>
+<script type="text/javascript">
+    (function () {
+        var html = document.documentElement;
+        var width = html.getBoundingClientRect().width;
+        html.style.fontSize = width / 18 + 'px';
+
+        var url = document.URL;
+        var mid = url.split("=");
+        $("#rid").val(mid[1]);
+
+    })()
+</script>
+</html>
