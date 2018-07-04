@@ -431,7 +431,7 @@ div,a,img {
   /*line-height: 20px;*/
 }
 .content1,.content2,.content3,.content4 {
-  display: block;
+  display: none;
   overflow: hidden;
   width: 100%;
   margin-top: 15px;

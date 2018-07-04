@@ -49,19 +49,18 @@ jQuery(document).ready(function($) {
                 $('.course').html('技术干货')
 				// $('.content2').css('display','block').siblings().css('display','none');
                 $('.content2').css('display','block');
-                $('.content1,.content3').css('display','none');
+                $('.content1,.content3,.content4').css('display','none');
             }else if (count==2) {
                 $('.course').html('信用卡')
                 // $('.content3').css('display','block').siblings().css('display','none');
                 $('.content3').css('display','block');
-                $('.content1,.content2').css('display','none');
-                // $('.content1,.content2').css('display','none');
-            }/*else if (count==3) {
+                $('.content1,.content2,.content4').css('display','none');
+            }else if (count==3) {
                 $('.course').html('视频教学')
                 // $('.content4').css('display','block').siblings().css('display','none');
                 $('.content4').css('display','block');
                 $('.content1,.content3,.content2').css('display','none');
-            }*/
+            }
             var wrapper = $(this);
 			if( !wrapper.find('.selected').is(':last-child') ) {
 				var selectedPosition = container.find('.cd-item-wrapper .selected').index() + 1;
@@ -78,18 +77,18 @@ jQuery(document).ready(function($) {
                 // $('.content1').css('display','block')
 				$('.course').html('最新口子')
                 $('.content1').css('display','block');
-                $('.content2,.content3').css('display','none');
+                $('.content2,.content3,.content4').css('display','none');
             }else if (count==1) {
                 $('.course').html('技术干货')
                 // $('.content2').css('display','block').siblings().css('display','none');
                 $('.content2').css('display','block');
-                $('.content1,.content3').css('display','none');
+                $('.content1,.content3,.content4').css('display','none');
                 // $('.content2').get(0).style.display='block';
             }else if (count==2) {
                 $('.course').html('信用卡')
                 // $('.content3').css('display','block').siblings().css('display','none');
                 $('.content3').css('display','block');
-                $('.content1,.content2').css('display','none');
+                $('.content1,.content2,.content4').css('display','none');
             }
             // console.log(count);
 			var wrapper = $(this);
@@ -105,16 +104,20 @@ jQuery(document).ready(function($) {
                 $('.course').html('技术干货')
                 // $('.content2').css('display','block').siblings().css('display','none');
                 $('.content2').css('display','block');
-                $('.content1,.content3').css('display','none');
+                $('.content1,.content3,.content4').css('display','none');
+                console.log($('.content1').css('display'));
+                console.log($('.content2').css('display'));
+                console.log($('.content3').css('display'));
+                console.log($('.content4').css('display'));
             }else if (count==2) {
                 $('.course').html('信用卡')
                 // $('.content3').css('display','block!important').siblings().css('display','none');
                 $('.content3').css('display','block');
-                $('.content1,.content2').css('display','none');
+                $('.content1,.content2,.content4').css('display','none');
             }else if (count==3) {
                 $('.course').html('视频教学')
                 // $('.content4').css('display','block!important').siblings().css('display','none');
-                // $('.content4').css('display','block');
+                $('.content4').css('display','block');
                 $('.content1,.content3,.content2').css('display','none');
             }
             console.log(count);
@@ -125,12 +128,12 @@ jQuery(document).ready(function($) {
                 // $('.content1').css('display','block')
                 $('.course').html('最新口子')
                 $('.content1').css('display','block');
-                $('.content2,.content3').css('display','none');
+                $('.content2,.content3,.content4').css('display','none');
             }else if (count==1) {
                 $('.course').html('技术干货')
                 // $('.content2').css('display','block').siblings().css('display','none');
                 $('.content2').css('display','block');
-                $('.content1,.content3').css('display','none');
+                $('.content1,.content3,.content4').css('display','none');
             }else if (count==2) {
                 $('.course').html('信用卡')
                 // $('.content3').css('display','block').siblings().css('display','none');
