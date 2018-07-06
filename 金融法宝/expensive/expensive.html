@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="css/expensive.css">
     <style>
         body {
-            background: #efbd7f
+            background: #f5f5f5;
+            background:linear-gradient(0deg, #fffcc3, #ffffff);
+            background:-moz-linear-gradient(0deg, #fffcc3, #ffffff);
+            /*background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ff0000), to(rgba(0, 0, 255, 0.5)));*/
+            background:-o-linear-gradient(0deg, #fffcc3, #ffffff);
+        }
+        ul {
+            margin-left: 0.48rem;
         }
         .container {
             width: 100%;
@@ -20,8 +27,15 @@
         .container img {
             width: 6rem;
             float: left;
-            margin-right: 2.666666rem;
-            margin-bottom: 1.816666rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1.216666rem;
+        }
+        footer img {
+            width: 100%;
+            margin-top: 0.1rem;
+        }
+        .three,.four {
+            margin-bottom: 0!important;
         }
     </style>
 </head>
@@ -48,16 +62,19 @@
         </li>
         <li>
             <a href="https://m.qichacha.com/">
-                <img src="img/goverment.png" alt="">
+                <img class="three" src="img/goverment.png" alt="">
             </a>
         </li>
         <li>
             <a href="bank.html">
-                <img src="img/card.png" alt="">
+                <img class="four" src="img/card.png" alt="">
             </a>
         </li>
     </ul>
 </div>
+<footer>
+    <img src="img/footer.png" alt="">
+</footer>
 </body>
 <script>
     var scale = 1 / window.devicePixelRatio;
